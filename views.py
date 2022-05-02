@@ -1,16 +1,10 @@
 from flask import Flask, render_template
 
+loise= Flask(__name__)
 
-app = Flask(__name__)
-
-@app.route('/')
+@loise.route('/')#localhost5000/
 def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-        app.run( debug = True)
-
-# @app.route('/article')
-# def article():
-#      return render_template('article.html')
-
+    loise.run(debug= True)
