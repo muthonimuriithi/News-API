@@ -1,0 +1,6 @@
+
+{% macro displaySources(sources) %}
+{% for source in sources %}
+<a class="nav-link mx-3" href="{{ url_for('main.source', source=source.id) }}">{{source.name}}</a>
+{% endfor %}
+{% endmacro %}

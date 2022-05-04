@@ -1,0 +1,15 @@
+{% macro displayArticles(articles) %}
+{% for article in articles %}
+ <div class="col-lg-4">
+    <div class="card">
+  <img class="card-img-top" src="{{article.url_to_image }}" alt="Card image cap" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">{{ article.title }}</h5>
+    <p class="card-text">{{ article.description }}</p>
+    <div class="card-text"><small>{{article.date}}</small></div>
+    <a href="{{article.url}}" target="_blank" class="btn btn-info">Read Article</a>
+  </div>
+</div>
+ </div>
+{% endfor %}
+{% endmacro %}

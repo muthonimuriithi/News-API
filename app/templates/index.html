@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% import 'source_macro.html' as source_macro %}
+
+{% import 'macros.html' as macro %}
+
+{% block content %}
+
+  <div class="container-fluid px-5">
+    <div class="row">
+      <div class="col-lg-3">
+        {{ source_macro.displaySources(sources)}}
+      </div>
+      <div class="col-lg-9">
+          <div class="row">
+          {{macro.displayArticles(articles)}}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
