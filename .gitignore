@@ -1,0 +1,11 @@
+environment/
+*.pyc
+instance/
+
+.vscode/
+
+# directories
+**/__pycache__/
+
+start.sh
+/news-api
